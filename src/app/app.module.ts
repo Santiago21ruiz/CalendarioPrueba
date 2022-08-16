@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ScheduleModule, RecurrenceEditorModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, DragAndDropService, ResizeService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,9 +9,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ScheduleModule, RecurrenceEditorModule
+     ScheduleModule,
   ],
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, DragAndDropService, ResizeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
