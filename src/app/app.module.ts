@@ -1,17 +1,49 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import {
+  DayService,
+  WeekService,
+  WorkWeekService,
+  MonthService,
+  AgendaService,
+  MonthAgendaService,
+} from '@syncfusion/ej2-angular-schedule';
 import { AppComponent } from './app.component';
 
+/**
+ * Module
+ */
 @NgModule({
-  declarations: [
-    AppComponent
+  imports: [BrowserModule, ScheduleModule, ButtonModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  providers: [
+    DayService,
+    WeekService,
+    WorkWeekService,
+    MonthService,
+    AgendaService,
+    MonthAgendaService,
   ],
-  imports: [
-    BrowserModule,
-     ScheduleModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
+
+// import { NgModule } from '@angular/core';
+// import { BrowserModule } from '@angular/platform-browser';
+// import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
+// import { AppComponent } from './app.component';
+
+// @NgModule({
+//   declarations: [
+//     AppComponent
+//   ],
+//   imports: [
+//     BrowserModule,
+//      ScheduleModule,
+//   ],
+//   providers: [],
+//   bootstrap: [AppComponent]
+// })
+// export class AppModule { }
